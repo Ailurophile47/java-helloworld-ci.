@@ -25,7 +25,8 @@ jobs:
           distribution: "temurin"
 
       - name: Build with Maven
-        run: mvn -B compile
+        run: mvn -B -X compile
+        # -X gives full error logs if something breaks
 
   security-check:
     runs-on: ubuntu-latest
