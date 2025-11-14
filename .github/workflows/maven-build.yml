@@ -26,7 +26,7 @@ jobs:
 
       - name: Build with Maven
         run: mvn -B -X compile
-        # -X gives full error logs if something breaks
+        # -X gives full error logs if something breaks now
 
   security-check:
     runs-on: ubuntu-latest
